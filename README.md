@@ -25,3 +25,4 @@ Upload this into [overleaf](https://www.overleaf.com), or download and use a LaT
  
 
 compiled using `pdflatex`, but your mileage may vary with other compilers.
+this was made based on a modified altacv template, see *https://github.com/liantze/AltaCV*
