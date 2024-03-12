@@ -1,70 +1,33 @@
-%%%%%%%%%%%%%%%%%
-% This is an template CV created using altacv.cls (v1.1, 21 November 2016) written by Jools Clarke (11 March 2024) for use by University College London CDT, based on a template by LianTze Lim (liantze@gmail.com) from this
-% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
-% 
-%% It may be distributed and/or modified under the
-%% conditions of the LaTeX Project Public License, either version 1.3
-%% of this license or (at your option) any later version.
-%% The latest version of this license is in
-%%    http://www.latex-project.org/lppl.txt
-%% and version 1.3 or later is part of all distributions of LaTeX
-%% version 2003/12/01 or later.
-%%%%%%%%%%%%%%%%
-
-\documentclass[10pt,a4paper]{altacv}
-
-
-\geometry{left=0.5cm,right=8.1cm,marginparwidth=6.8cm,marginparsep=0.5cm,top=1cm,bottom=1cm}
-
-
-% If using pdflatex:
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[default]{lato}
-
-
-% Change the colours
-\definecolor{ucl_pink}{HTML}{AC145A}
-\definecolor{ucl_yellow}{HTML}{FFCA36}
-\definecolor{ucl_purple}{HTML}{500778}
-\definecolor{ucl_navy}{HTML}{002248}
-\definecolor{LightGrey}{HTML}{666666}
-\colorlet{heading}{ucl_pink}
-\colorlet{icon}{ucl_yellow}
-\colorlet{accent}{ucl_navy}
-\colorlet{emphasis}{ucl_purple}
-\colorlet{body}{LightGrey}
-
-% Change the bullets for itemize and rating marker
-% for \cvskill
-\renewcommand{\itemmarker}{{\small\textbullet}}
-\renewcommand{\ratingmarker}{\faCircle}
-
+\documentclass[10pt,a4paper,ragged2e,withhyper,normalphoto]{config/altacv}
+\input{config/header_settings.tex}
 \begin{document}
+
 \name{Firstname Lastname}
   \tagline{Job Role}
 
-\personalinfo{%
+\personalinfo{% these are all option, comment out any you don't want
   \email{first.lastclarke.23@ucl.ac.uk}
   \email{personal@gmail.com}
   \phone{07000 000000}
   \linkedin{www.linkedin.com/in/name}
-  %\homepage{https://www.ucl.ac.uk/astrophysics/name-phd-student}
+  \homepage{https://www.ucl.ac.uk/astrophysics/name-phd-student}
   \github{https://github.com/name}
   \location{London}
 }
 
+\input{config/body_settings.tex}
 \makecvheader
+\begin{paracol}{2}
 
-%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
-
-\cvsection[page1sidebar]{}
+%% CDT Project Info
 \cvevent{PhD: CDT Data Intensive Science, PHD title}{University College London}{Oct 2023 -- Present}{London, UK}
 \begin{itemize}
 \item Influential modules include ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel eros nibh. Sed ac enim a ante lacinia tristique.
 \item Alongside this, my thesis project is in ...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel eros nibh. Sed ac enim a ante lacinia tristique. Maecenas pellentesque mi orci, ultricies interdum erat tristique et.
 \end{itemize}
+%%
 
+%% Experience
 \cvsection[]{Experience}
 
 \cvevent{ML Research Group Industry Placement}{...}{Jan 2024 -- Present}{London, UK}
@@ -74,23 +37,74 @@
 \item Also carried out ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel eros nibh. Sed ac enim a ante lacinia tristique. 
 \end{itemize}
 
-\cvevent{Other role}{A place}{start -- end}{location}
+\cvevent{Other role}{A place}{mon\_start -- mon\_end year}{location, country}
 \begin{itemize}
 \item worked as the \nth{3} person ever to... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel eros nibh. Sed ac enim a ante lacinia tristique.In hac habitasse platea dictumst. Mauris sit amet nisi at mi tristique posuere. Etiam tincidunt magna id nisi mollis, vel venenatis enim porttitor. Proin rhoncus ex ut metus hendrerit tincidunt. Morbi a ultrices tellus. 
 \end{itemize}
-
-\cvevent{}{a related role at a different place}{some other time}{location}
+% if you were carrying on a related role 
+\cvevent{}{a different place}{mon\_start year -- mon\_end year}{location, country}
 \begin{itemize}
-\item did this stuff ... In in eros eu nisi condimentum placerat nec et nisi. Phasellus sed tristique magna. In hac habitasse platea dictumst. Mauris sit amet nisi at mi tristique posuere. Etiam tincidunt magna id nisi mollis, vel venenatis enim porttitor. Proin rhoncus ex ut metus hendrerit tincidunt. Morbi a ultrices tellus. 
+\item an amazing oppurtunity to ... In in eros eu nisi condimentum placerat nec et nisi. Phasellus sed tristique magna. In hac habitasse platea dictumst. Mauris sit amet nisi at mi tristique posuere. Etiam tincidunt magna id nisi mollis, vel venenatis enim porttitor. Proin rhoncus ex ut metus hendrerit tincidunt. Morbi a ultrices tellus. 
 \end{itemize}
 
-\cvevent{Other role}{A place}{start -- end}{location}
+\cvevent{Other role}{employer}{mon\_start year -- mon\_end year}{location, country}
 \begin{itemize}
-\item worked ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel eros nibh. Sed ac enim a ante lacinia tristique. Maecenas pellentesque mi orci, ultricies interdum erat tristique et. Nulla facilisi. In 
+\item worked as a... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel eros nibh. Sed ac enim a ante lacinia tristique. Maecenas pellentesque mi orci, ultricies interdum erat tristique et. Nulla facilisi. In 
 \item ultricies fringilla commodo. Quisque arcu massa, tempus vel placerat vel, rutrum quis mi. Sed eu tempor lacus, et gravida enim. Sed et auctor neque. Proin suscipit justo et rhoncus suscipit.
-
-
 \end{itemize}
+%%
 
+\switchcolumn %back to the top, next column
 
+%% Personal Life
+\cvsection{Personal Life}
+
+\color{body}
+In my personal life I did lots of things, I am really interested in ...  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel eros nibh. Sed ac enim a ante lacinia tristique. Maecenas pellentesque mi orci, ultricies interdum erat tristique et. Nulla facilisi. In ultricies fringilla commodo. Quisque arcu massa, tempus vel placerat vel, rutrum quis mi. Sed eu tempor lacus, et gravida enim. Sed et auctor neque. Proin suscipit justo et rhoncus suscipit.
+%%
+
+%% Skills
+\cvsection{Skills}
+\cvtag{A thing i am good at} 
+\cvtag{and another} \break
+\cvtag{ Lorem ipsum}
+\cvtag{rutrum quis mi.}
+
+\divider\smallskip
+
+\cvtag{Python}
+\cvtag{Git}
+\cvtag{another program i know}
+\cvtag{...}
+\cvtag{Quisque }
+\cvtag{ultricies}
+\cvtag{Maecenas}
+%%
+
+%% Language (this section is optional, if you only speak one language you can delete it , PS - GCSE is about A2/B1, A level is B2)
+\cvsection{Language}
+
+\cvskill{German \textcolor{body}{Native}}{5}
+\cvskill{English \textcolor{body}{C1}}{4}
+\cvskill{Language \textcolor{body}{level}}{2}
+%%
+
+%% Education
+\cvsection{Education}
+
+\cveduevent{Undergrad degree}{some University}{start -- end}{location}{\nth{1} Class Hons}
+\cveduevent{list A-Levels that i did}{some VI Form}{start -- end}{location}{A*A*C}
+%%
+
+%% References
+\cvsection{References}
+\cvref{reference name -- relation to me}{reference\_email@ucl.ac.uk}
+
+\cvref{reference two name -- relation to me}{reference2\_email@ucl.ac.uk}
+\divider %do not leave a line between this and the last reference
+
+Additional references available on request
+%%
+
+\end{paracol}
 \end{document}
