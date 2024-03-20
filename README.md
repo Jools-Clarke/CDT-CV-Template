@@ -21,6 +21,8 @@ Upload this into [overleaf](https://www.overleaf.com), or download and use a LaT
 
 - Please remember to escape any special characters in email addresses or usernames using `\`, for example *your_name@mail.com* is written as `your\_name@mail.com`.
 
+- When filling out the `\linkedin` or `\github` fields in the `\personalinfo` section, be wary that these just need your username, which will look something like 'emily-smith', and not the full link to the site. It is always advisable to check all your links are still functioning once the document has compiled. 
+
 
  
 
